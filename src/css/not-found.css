@@ -1,0 +1,60 @@
+.not-found-container {
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+  padding: 0 10px;
+}
+.not-found-container h1 {
+  font-size: 180px;
+  font-weight: 500;
+  color: rgb(0, 0, 0, 1);
+}
+
+.not-found-container h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.not-found-container p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+}
+.not-found-container .go-home {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0, 131, 253, 0.8);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+
+.not-found-container .go-home:hover {
+  background: rgba(0, 131, 253, 1);
+}
+
+@media screen and (max-width: 601px) {
+  .not-found-container h1 {
+    font-size: 100px;
+  }
+  .not-found-container h2 {
+    font-size: 18px;
+  }
+  .not-found-container p {
+    font-size: 14px;
+  }
+  .not-found-container .go-home {
+    font-size: 12px;
+  }
+}

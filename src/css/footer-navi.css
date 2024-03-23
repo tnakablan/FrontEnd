@@ -1,0 +1,66 @@
+.footer-container {
+  padding: 40px 20px;
+  background-color: #343434;
+}
+
+.footer-container .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 600px;
+}
+
+.footer-container .left-navi {
+  margin: auto;
+}
+
+.footer-container .left-navi .slogan {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 8px;
+  min-width: 200px;
+}
+
+.footer-container .footer-navi-link {
+  display: block;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+.footer-container .right-navi {
+  color: white;
+  font-style: normal;
+  pointer-events: none;
+  font-weight: 300;
+  margin: auto;
+}
+.footer-container .right-navi div:first-child {
+  margin-bottom: 20px;
+}
+.footer-container .right-navi .fontawsm-logo {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+.footer-container .right-navi .icon {
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+.footer-container .right-navi h4 {
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer-container .right-navi h5 {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+@media (max-width: 500px) {
+}

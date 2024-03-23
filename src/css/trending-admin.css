@@ -1,0 +1,90 @@
+.trending-admin-container {
+  flex: 1 1;
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 0 4px rgb(194, 194, 194);
+}
+
+.trending-admin-container h1 {
+  font-size: 22px;
+  color: #343434;
+  padding: 10px;
+  margin: 0;
+  font-weight: 500;
+}
+.trending-admin-container-datas {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  height: 62%;
+  padding: 0 10px;
+}
+
+.trending-admin-container-datas::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+
+.trending-admin-container-datas::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: none;
+}
+
+.trending-admin-container-datas::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.trending-admin-container-datas::-webkit-scrollbar-thumb:hover {
+  background: #c7c7c7;
+}
+
+.trending-admin-container-datas .trending-data {
+  display: flex;
+  margin-bottom: 20px;
+}
+.trending-admin-container-datas .trending-data h4 {
+  font-size: 13px;
+  margin: 0;
+  padding: 0 4px;
+  color: #343434;
+  text-transform: capitalize;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.trending-header {
+  display: flex;
+  margin: 10px 0;
+  background-color: rgb(250, 250, 250);
+  padding: 10px;
+  border-radius: 5px;
+}
+.trending-header h5 {
+  font-size: 14px;
+  color: rgb(160, 160, 160);
+  font-weight: 500;
+  margin: 0;
+}
+.trending-header h5:first-child {
+  flex: 0.8;
+}
+.trending-admin-container-datas .trending-data h4:first-child {
+  flex: 0.8;
+  padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.trending-admin-container-datas .trending-data h4:last-child {
+  flex: 0.2;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+.trending-header h5:last-child {
+  flex: 0.2;
+}

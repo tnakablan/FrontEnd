@@ -1,0 +1,180 @@
+.login-container {
+  margin: 35px 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.login-container .registration-login-success-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.548);
+  z-index: 999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container .registration-login-success-loader .loader {
+  transform: scale(1.5);
+}
+.login-container .registration-login-error {
+  margin-bottom: 20px !important;
+  background-color: rgba(255, 0, 0, 0.644);
+  width: 100%;
+  max-width: 450px;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid red;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container .registration-login-error .registration-login-error-icon {
+  font-size: 20px;
+  padding-right: 5px;
+}
+.login-container .registration-login-error h5 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.login-container .login-sub-container {
+  width: 90%;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-container .login-sub-container form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login-container .login-sub-container form button {
+  color: white;
+  background: rgba(0, 131, 253, 0.8);
+  border: none;
+  padding: 5px;
+  width: 100%;
+  max-width: 450px;
+  height: 32px;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container .login-sub-container form button:hover:enabled {
+  background: rgba(0, 131, 253, 1);
+}
+
+.login-container .login-sub-container form button:hover:disabled {
+  cursor: not-allowed;
+}
+
+.login-container .login-sub-container h2 {
+  color: #343434;
+  font-weight: 800;
+  text-align: left;
+  width: 100%;
+  max-width: 450px;
+  margin: 0;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-size: 44px;
+}
+
+.login-container .login-sub-container h2 span {
+  display: inline-block;
+  transform: translate(-2px, -2px);
+}
+
+.login-container .login-sub-container h3 {
+  color: #343434;
+  text-align: left;
+  width: 100%;
+  max-width: 450px;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 13px;
+  opacity: 0.8;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.login-container .logo img {
+  position: fixed;
+  left: 20px;
+  top: 18px;
+  width: 100px;
+}
+
+.login-container .dont-have-account {
+  color: #343434;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  width: 100%;
+  max-width: 450px;
+  text-align: left;
+  opacity: 0.8;
+}
+
+.login-container .skip-to-app {
+  display: inline-block;
+  width: 100%;
+  max-width: 450px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+  margin: 6px 0;
+  opacity: 0.8;
+}
+
+.login-container .skip-to-app a {
+  text-decoration: none;
+  color: #343434;
+}
+
+.login-container .skip-to-app .icon {
+  transform: translateY(-1px);
+  margin-right: 3px;
+}
+
+.login-container .skip-to-app a:hover {
+  color: rgba(0, 131, 253, 1);
+}
+
+.login-container .disable-link {
+  cursor: not-allowed;
+}
+
+.login-container .disable-link:hover {
+  color: #343434 !important;
+  text-decoration: none;
+}
+
+@media (max-width: 701px) {
+  .login-container .login-sub-container h2 {
+    font-size: 36px;
+  }
+
+  .login-container .login-sub-container h3 {
+    font-size: 13px;
+  }
+}

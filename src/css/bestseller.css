@@ -1,0 +1,276 @@
+.bestseller-main-container {
+  position: relative;
+  margin-top: 70px;
+}
+
+.bestseller-main-sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bestseller-main-container #bestseller-btn-r,
+.bestseller-main-container #bestseller-btn-l {
+  border-radius: 4px;
+  border: 1px solid rgb(211, 211, 211);
+}
+.bestseller-main-container #bestseller-btn-r {
+  right: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  width: 25px;
+}
+.bestseller-main-container #bestseller-btn-l {
+  left: 20px;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  width: 25px;
+}
+
+.bestseller-main-container .bestseller-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.bestseller-main-container h2 {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 0;
+  margin-right: 5px;
+  line-height: 21px;
+  flex: 1;
+}
+.bestseller-main-container .bestseller-container {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  --scroll-behavior: smooth;
+  padding: 10px;
+}
+.bestseller-main-container .bestseller-container::-webkit-scrollbar {
+  width: 5px;
+  height: 5px !important;
+}
+.bestseller-main-container .bestseller-error {
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 40px 0 80px 0;
+}
+.bestseller-main-container .bestseller-loading {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bestseller-main-container .bestseller-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.bestseller-main-container .bestseller-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.bestseller-main-container
+  .bestseller-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.bestseller-main-container .bestseller-container .best-seller-item-container {
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 285px;
+  height: 275px;
+  margin: 0;
+  margin-left: 25px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-decoration: none;
+}
+.bestseller-main-container
+  .bestseller-container
+  .best-seller-item-container
+  .bestseller-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.bestseller-main-container
+  .bestseller-container
+  .best-seller-item-container:first-of-type {
+  margin-left: 0 !important;
+}
+
+.bestseller-container .best-seller-item-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.bestseller-container .best-seller-item-container h4 {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  text-transform: capitalize;
+  color: #000;
+  margin-right: 4px;
+}
+
+.bestseller-main-container
+  .bestseller-container
+  .best-seller-item-container
+  .bestseller-details
+  .bestseller-currency
+  span {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.bestseller-main-container
+  .bestseller-container
+  .best-seller-item-container
+  .bestseller-details
+  .bestseller-currency {
+  height: fit-content;
+  color: #ba2b20;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.bestseller-main-container
+  .bestseller-container
+  .best-seller-item-container
+  .bestseller-details
+  .bestseller-currency
+  .currency {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.bestseller-main-container .bestseller-currency span:first-child {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bestseller-main-container
+  .bestseller-container
+  .best-seller-item-container
+  .bestseller-details
+  .bestseller-currency
+  .currency::after {
+  content: ".00";
+  font-size: 11px;
+}
+
+@media (max-width: 980px) {
+  .bestseller-main-container h2 {
+    font-size: 18px;
+  }
+  .bestseller-main-container .bestseller-container .best-seller-item-container {
+    width: 220px;
+    height: 220px;
+    margin: 0 !important;
+    margin-left: 20px !important;
+  }
+  .bestseller-container .best-seller-item-container img {
+    height: 156px;
+  }
+  .bestseller-container .best-seller-item-container h4 {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .bestseller-main-container
+    .bestseller-container
+    .best-seller-item-container
+    .bestseller-details
+    .bestseller-currency
+    .currency {
+    font-size: 15px;
+  }
+  .bestseller-main-container
+    .bestseller-container
+    .best-seller-item-container
+    .bestseller-details
+    .bestseller-currency
+    span {
+    font-size: 10px;
+  }
+  .bestseller-main-container
+    .bestseller-container
+    .best-seller-item-container
+    .bestseller-details
+    .bestseller-currency
+    .currency::after {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bestseller-main-container h2 {
+    font-size: 16px;
+  }
+  .bestseller-main-container .bestseller-container .best-seller-item-container {
+    width: 200px;
+    height: 208px;
+    margin-left: 14px !important;
+  }
+
+  .bestseller-container .best-seller-item-container img {
+    height: 146px;
+  }
+  .bestseller-container .best-seller-item-container h4 {
+    font-size: 12px;
+  }
+  .bestseller-main-container
+    .bestseller-container
+    .best-seller-item-container
+    .bestseller-details
+    .bestseller-currency
+    .currency {
+    font-size: 14px;
+  }
+  .bestseller-main-container
+    .bestseller-container
+    .best-seller-item-container
+    .bestseller-details
+    .bestseller-currency
+    span {
+    font-size: 9px;
+  }
+  .bestseller-main-container
+    .bestseller-container
+    .best-seller-item-container
+    .bestseller-details
+    .bestseller-currency
+    .currency::after {
+    font-size: 9px;
+  }
+}

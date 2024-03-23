@@ -1,0 +1,50 @@
+.input-container {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  margin: 26px 0;
+}
+.input-container input {
+  outline: none;
+  border: 0;
+  width: 100%;
+  border-bottom: 1px dotted #343434;
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: white;
+}
+.input-container input::-webkit-outer-spin-button,
+.input-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-container input[type="number"] {
+  -moz-appearance: textfield;
+  background-color: white;
+}
+.input-container label {
+  font-size: 12px;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(5px);
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgb(107, 107, 107);
+  letter-spacing: 1px;
+}
+.input-container input:focus ~ label,
+.input-container input:not(:placeholder-shown) ~ label {
+  transform: translateY(-17px);
+}
+.input-error {
+  color: red;
+  font-size: 13px;
+  position: absolute;
+  top: 30px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
